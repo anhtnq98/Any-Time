@@ -1,0 +1,115 @@
+#last_main {
+  .inner {
+      border-top: 5px solid #2D4B73;
+      padding-bottom: 266px;
+
+      @include pc {
+          border-top: get_pc(5) solid #2D4B73;
+          padding-bottom: get_pc(266);
+      }
+
+      @include sp {
+          border-top: unset;
+          padding-bottom: get_sp(82);
+      }
+
+      h1 {
+          text-align: left;
+          padding: 10px 196px 0;
+          font-size: 56px;
+          color: #2D4B73;
+          margin-bottom: 10px;
+          font-weight: 900;
+          width: fit-content;
+
+          @include pc {
+              padding: get_pc(10) get_pc(196) 0;
+              font-size: get_pc(56);
+              margin-bottom: get_pc(10);
+          }
+
+          @include sp {
+              padding: get_sp(10) get_sp(10) 0;
+              font-size: get_sp(24);
+              margin-bottom: get_sp(4);
+          }
+
+          span {
+              color: #2D4B73;
+              font-family: $base-font-family;
+              font-weight: bold;
+              font-size: 21px;
+              display: block;
+              line-height: 30px;
+              text-align: center;
+
+              @include pc {
+                  font-size: get_pc(21);
+                  line-height: get_pc(30);
+              }
+
+              @include sp {
+                  font-size: get_sp(9);
+                  line-height: get_sp(13);
+              }
+          }
+      }
+
+      .list {
+          padding: 47px 0 3px;
+          background: #2D4B73 0% 0% no-repeat padding-box;
+
+          @include pc {
+              padding: get_pc(47) 0 get_pc(3);
+          }
+
+          @include sp {
+              padding: get_sp(15) get_sp(10);
+          }
+
+          ul {
+              max-width: 1528px;
+              margin: 0 auto;
+              display: flex;
+              flex-wrap: wrap;
+
+              @include pc {
+                  max-width: get_pc(1528);
+              }
+
+              @include sp {
+                  max-width: 100%;
+              }
+
+              li {
+                  color: #FFFFFF;
+                  font-family: $base-font-family;
+                  font-weight: bold;
+                  font-size: 26px;
+                  display: block;
+                  margin-bottom: 43px;
+                  text-align: center;
+                  margin-right: 59px;
+
+                  @include pc {
+                      font-size: get_pc(26);
+                      margin-bottom: get_pc(43);
+                      margin-right: get_pc(59);
+                  }
+
+                  @include sp {
+                      font-size: get_sp(11);
+                      margin-bottom: get_sp(15);
+                      margin-right: get_sp(15);
+                  }
+
+                  &:last-child {
+                      @include sp {
+                          margin-bottom: 0;
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

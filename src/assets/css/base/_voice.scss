@@ -1,0 +1,251 @@
+#voices {
+  .inner {
+      max-width: 1528px;
+      margin: 0 auto 129px;
+
+      @include pc {
+          max-width: get_pc(1528);
+          margin: 0 auto get_pc(129);
+      }
+
+      @include sp {
+          max-width: 100%;
+          margin: 0 auto get_sp(20);
+          padding: 0 get_sp(10);
+          background-color: #FAFAFA;
+      }
+
+      h2 {
+          font-size: 113px;
+          line-height: 113px;
+          color: #2D4B73;
+          margin-bottom: 42px;
+          font-weight: 900;
+
+          @include pc {
+              font-size: get_pc(113);
+              line-height: get_pc(113);
+              margin-bottom: get_pc(42);
+          }
+
+          @include sp {
+              font-size: get_sp(33);
+              line-height: get_sp(33);
+              margin-bottom: get_sp(15);
+          }
+
+          span {
+              color: #2D4B73;
+              font-family: $base-font-family;
+              font-weight: bold;
+              font-size: 44px;
+              display: block;
+              line-height: 44px;
+
+              @include pc {
+                  font-size: get_pc(44);
+                  line-height: get_pc(44);
+              }
+
+              @include sp {
+                  font-size: get_sp(13);
+                  line-height: get_sp(13);
+              }
+          }
+      }
+
+      ul {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          @include sp {
+              overflow-x: scroll;
+              flex-wrap: unset;
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              grid-template-rows: 2;
+              overflow-y: scroll;
+          }
+
+          li {
+              width: 363px;
+              height: 470px;
+              text-align: left;
+              padding: 30px 20px 27px;
+              box-shadow: 0 3px 6px #00000029;
+              border-radius: 5px;
+              margin-bottom: 38px;
+              position: relative;
+
+              @include pc {
+                  width: get_pc(363);
+                  height: get_pc(470);
+                  padding: get_pc(30) get_pc(20) get_pc(27);
+                  border-radius: get_pc(5);
+                  margin-bottom: get_pc(38);
+              }
+
+              @include sp {
+                  width: get_sp(240);
+                  min-width: get_sp(240);
+                  height: get_sp(241);
+                  padding: get_sp(15) get_sp(7) get_sp(13) get_sp(12);
+                  border-radius: get_sp(3);
+                  margin-bottom: get_sp(13);
+                  background-color: #FFFFFF;
+                  margin-right: get_sp(12);
+                  box-shadow: 0 1px 4px #00000029;
+              }
+
+              h3 {
+                  color: #2D4B73;
+                  font-family: $base-font-family;
+                  font-weight: bold;
+                  font-size: 26px;
+                  display: block;
+                  line-height: 26px;
+                  margin-bottom: 6px;
+
+                  @include pc {
+                      font-size: get_pc(26);
+                      line-height: get_pc(26);
+                      margin-bottom: get_pc(6);
+                  }
+
+                  @include sp {
+                      font-size: get_sp(15);
+                      line-height: get_sp(15);
+                      margin-bottom: get_sp(3);
+                  }
+              }
+
+              .rate {
+                  width: 157px;
+                  margin-bottom: 24px;
+
+                  @include pc {
+                      width: get_pc(157);
+                      margin-bottom: get_pc(24);
+                  }
+
+                  @include sp {
+                      width: get_sp(80);
+                      margin-bottom: get_sp(10);
+                  }
+              }
+
+              h4 {
+                  color: #2D4B73;
+                  font-family: $base-font-family;
+                  font-weight: bold;
+                  font-size: 24px;
+                  display: block;
+                  line-height: 24px;
+                  margin-bottom: 24px;
+
+                  @include pc {
+                      font-size: get_pc(24);
+                      line-height: get_pc(24);
+                      margin-bottom: get_pc(24);
+                  }
+
+                  @include sp {
+                      font-size: get_sp(14);
+                      line-height: get_sp(14);
+                      margin-bottom: get_sp(10);
+                  }
+
+                  span {
+                      margin-left: 18px;
+
+                      @include pc {
+                          margin-left: get_pc(18);
+                      }
+
+                      @include sp {
+                          margin-left: get_sp(10);
+                      }
+                  }
+              }
+
+              p {
+                  color: #2D4B73;
+                  font-family: $base-font-family;
+                  font-weight: bold;
+                  font-size: 21px;
+                  display: block;
+                  line-height: 31px;
+                  margin-bottom: 15px;
+
+                  @include pc {
+                      font-size: get_pc(21);
+                      line-height: get_pc(31);
+                      margin-bottom: get_pc(15);
+                  }
+
+                  @include sp {
+                      font-size: get_sp(12);
+                      line-height: get_sp(18);
+                      margin-bottom: get_sp(10);
+                  }
+              }
+
+              .people {
+                  display: flex;
+                  align-items: center;
+                  position: absolute;
+                  bottom: 10px;
+                  left: 26px;
+
+                  @include pc {
+                      bottom: get_pc(10);
+                      left: get_pc(26);
+                  }
+
+                  @include sp {
+                      bottom: get_sp(13);
+                      left: get_sp(12);
+                  }
+
+                  .thumb {
+                      width: 87px;
+                      height: 87px;
+
+                      @include pc {
+                          width: get_pc(87);
+                          height: get_pc(87);
+                      }
+
+                      @include sp {
+                          width: get_sp(47);
+                          height: get_sp(48);
+                      }
+                  }
+
+                  span {
+                      color: #2D4B73;
+                      font-family: $base-font-family;
+                      font-weight: bold;
+                      font-size: 22px;
+                      display: block;
+                      line-height: 22px;
+                      margin-left: 12px;
+
+                      @include pc {
+                          font-size: get_pc(22);
+                          line-height: get_pc(22);
+                          margin-left: get_pc(12);
+                      }
+
+                      @include sp {
+                          font-size: get_sp(12);
+                          line-height: get_sp(12);
+                          margin-left: get_sp(8);
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

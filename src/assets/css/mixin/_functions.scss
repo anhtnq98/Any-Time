@@ -1,0 +1,38 @@
+@mixin bgsetup($bgimage: "", $bgposi: "", $bgsize: "", $bgrepeat: "") {
+  @if $bgimage != "" {
+    background-image: url($bgimage);
+  }
+  @if $bgposi != "" {
+    background-position: $bgposi;
+  }
+  @if $bgsize != "" {
+    background-size: $bgsize;
+  }
+  @if $bgrepeat != "" {
+    background-repeat: $bgrepeat;
+  } @else {
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin pc {
+  @media (max-width: $breakpoint-pc) and (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($breakpoint-md)) {
+    @content;
+  }
+}
+
+@function get_pc($fsize, $viewport: 1920) {
+  $rate: calc(100 / #{$viewport});
+  @return calc($rate * $fsize * 1vw);
+}
+
+@function get_sp($fsize, $viewport: 390) {
+  $rate: calc(100 / #{$viewport});
+  @return calc($rate * $fsize * 1vw);
+}

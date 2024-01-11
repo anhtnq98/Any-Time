@@ -1,0 +1,114 @@
+#company {
+  .inner {
+      max-width: 1528px;
+      margin: 0 auto 31px;
+
+      @include pc {
+          max-width: get_pc(1528);
+          margin: 0 auto get_pc(31);
+      }
+
+      @include sp {
+          max-width: 100%;
+          margin: 0 auto get_sp(10);
+          padding-top: get_sp(16.5);
+          padding-bottom: get_sp(12);
+          background-color: #FAFAFA;
+      }
+
+      h2 {
+          font-size: 113px;
+          line-height: 113px;
+          color: #2D4B73;
+          margin-bottom: 63px;
+          font-weight: 900;
+
+          @include pc {
+              font-size: get_pc(113);
+              line-height: get_pc(113);
+              margin-bottom: get_pc(63);
+          }
+
+          @include sp {
+              font-size: get_sp(33);
+              line-height: get_sp(33);
+              margin-bottom: get_sp(20);
+          }
+
+          span {
+              color: #2D4B73;
+              font-family: $base-font-family;
+              font-weight: bold;
+              font-size: 44px;
+              display: block;
+              line-height: 44px;
+              margin-top: 15px;
+
+              @include pc {
+                  font-size: get_pc(44);
+                  line-height: get_pc(44);
+                  margin-top: get_pc(15);
+              }
+
+              @include sp {
+                  font-size: get_sp(13);
+                  line-height: get_sp(13);
+                  margin-top: get_sp(4);
+              }
+          }
+      }
+
+      table {
+          width: 100%;
+
+          tbody {
+              tr {
+                  display: flex;
+                  padding-bottom: 13px;
+                  border-bottom: 3px solid #2D4B73;
+                  margin-bottom: 44px;
+
+                  @include pc {
+                      padding-bottom: get_pc(13);
+                      border-bottom: get_pc(3) solid #2D4B73;
+                      margin-bottom: get_pc(44);
+                  }
+
+                  @include sp {
+                      padding-bottom: get_sp(5);
+                      border-bottom: get_sp(1) solid #2D4B73;
+                      margin-bottom: get_sp(16);
+                  }
+
+                  td {
+                      color: #2D4B73;
+                      font-family: $base-font-family;
+                      font-weight: bold;
+                      font-size: 35px;
+                      display: block;
+                      margin-right: 55px;
+
+                      @include pc {
+                          font-size: get_pc(35);
+                          margin-right: get_pc(55);
+                      }
+
+                      @include sp {
+                          font-size: get_sp(13);
+                          margin-right: get_sp(13);
+                      }
+
+                      &:first-child {
+                          width: 36%;
+                          text-align: right;
+
+                          @include sp {
+                              width: 30%;
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

@@ -1,0 +1,175 @@
+#rate {
+  .inner {
+      max-width: 1528px;
+      margin: 0 auto 94px;
+      padding-top: 66px;
+
+      @include pc {
+          max-width: get_pc(1528);
+          margin: 0 auto get_pc(94);
+          padding-top: get_pc(66);
+      }
+
+      @include sp {
+          max-width: 100%;
+          margin: 0 auto get_sp(17);
+          padding-top: get_sp(22);
+      }
+
+      h2 {
+          font-size: 113px;
+          line-height: 113px;
+          color: #2D4B73;
+          margin-bottom: 42px;
+          font-weight: 900;
+
+          @include pc {
+              font-size: get_pc(113);
+              line-height: get_pc(113);
+              margin-bottom: get_pc(42);
+          }
+
+          @include sp {
+              font-size: get_sp(33);
+              line-height: get_sp(33);
+              margin-bottom: get_sp(15);
+          }
+
+          span {
+              color: #2D4B73;
+              font-family: $base-font-family;
+              font-weight: bold;
+              font-size: 44px;
+              display: block;
+              line-height: 44px;
+
+              @include pc {
+                  font-size: get_pc(44);
+                  line-height: get_pc(44);
+              }
+
+              @include sp {
+                  font-size: get_sp(13);
+                  line-height: get_sp(13);
+              }
+          }
+      }
+
+      table {
+          width: 100%;
+
+          @include sp {
+              width: get_sp(370);
+              margin: 0 auto;
+          }
+
+          tbody {
+              tr:first-child {
+                  display: flex;
+
+                  td {
+                      border-radius: 5px;
+                      font-weight: bold;
+                      padding: 28px 0 29px;
+                      width: 507px;
+                      font-size: 38px;
+                      margin-right: 3px;
+
+                      @include pc {
+                          border-radius: get_pc(5);
+                          padding: get_pc(28) 0 get_pc(29);
+                          width: get_pc(507);
+                          font-size: get_pc(38);
+                          margin-right: get_pc(3);
+                      }
+
+                      @include sp {
+                          width: get_sp(130);
+                          border-radius: get_sp(3);
+                          padding: get_sp(12) 0 get_sp(10);
+                          font-size: get_sp(13);
+                          margin-right: 0;
+                      }
+
+                      &:nth-child(1) {
+                          background: #375FE5 0% 0% no-repeat padding-box;
+                          color: #FFFFFF;
+
+                          @include sp {
+                              width: get_sp(110);
+                              border-radius: get_sp(3) 0 0 0;
+                          }
+                      }
+
+                      &:nth-child(2) {
+                          background: #01B2CC 0% 0% no-repeat padding-box;
+                          color: #FFFFFF;
+                          border-radius: unset;
+                      }
+
+                      &:nth-child(3) {
+                          background: #2D4B73 0% 0% no-repeat padding-box;
+                          color: #FFFFFF;
+
+                          @include sp {
+                              border-radius: 0 get_sp(3) 0 0;
+                          }
+                      }
+                  }
+              }
+
+              tr {
+                  display: flex;
+                  &.txt_note {
+                      td {
+                          &:nth-child(2) {
+                              margin-left: -20px;
+                              @include pc {
+                                  margin-left: get_pc(-20);
+                              }
+                              @include sp {
+                                  margin-left: get_sp(-6);
+                              }
+                          }
+                      }
+                  }
+                  td {
+                      font-weight: bold;
+                      padding: 14px 0 18px;
+                      width: 33.333%;
+                      font-size: 38px;
+
+                      @include pc {
+                          padding: get_pc(14) 0 get_pc(18);
+                          font-size: get_pc(38);
+                      }
+
+                      @include sp {
+                          padding: get_sp(5) 0;
+                          font-size: get_sp(14);
+                      }
+
+                      &:nth-child(1) {
+                          color: #375FE5;
+                      }
+
+                      &:nth-child(2) {
+                          color: #01B2CC;
+                      }
+
+                      &:nth-child(3) {
+                          color: #2D4B73;
+                      }
+                  }
+
+                  &:nth-child(3),
+                  &:nth-child(5),
+                  &:nth-child(7),
+                  &:nth-child(9) {
+                      background: #F5F5F5 0% 0% no-repeat padding-box;
+                  }
+              }
+          }
+      }
+  }
+}

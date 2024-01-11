@@ -1,0 +1,45 @@
+main{
+  overflow: hidden;
+  padding: 116px 0 0;
+
+  @include pc {
+      padding: get_pc(116) 0 0;
+  }
+
+  @include sp {
+      padding: get_sp(52) 0 0;
+  }
+  .banner{
+    width: 100vw;
+    .thumb{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      img{
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        -webkit-touch-callout: none;
+      }
+      .until_sp {
+        display: none !important;
+    
+        @include sp {
+            display: block !important;
+        }
+    }
+    
+    .until_pc {
+        display: block !important;
+    
+        @include sp {
+            display: none !important;
+        }
+    }
+    }
+
+  }
+}

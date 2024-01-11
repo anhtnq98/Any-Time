@@ -1,0 +1,773 @@
+.advertisement {
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #6330d6 0%, #e216c9 44%, #ff009c 100%);
+
+    @include pc {
+      height: get_pc(8);
+    }
+
+    @include sp {
+      height: get_sp(2);
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #6330d6 0%, #e216c9 44%, #ff009c 100%);
+
+    @include pc {
+      height: get_pc(8);
+    }
+
+    @include sp {
+      height: get_sp(2);
+    }
+  }
+
+  .inner {
+    max-width: 1196px;
+    margin: 0 auto;
+    padding: 30px 0 22px;
+
+    @include pc {
+      max-width: get_pc(1196);
+      padding: get_pc(30) 0 get_pc(22);
+    }
+
+    @include sp {
+      max-width: 100%;
+      padding: get_sp(7) 0;
+    }
+
+    .tlt_section {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px;
+
+      @include pc {
+        margin-bottom: get_pc(15);
+      }
+
+      @include sp {
+        margin-bottom: get_sp(1);
+        padding: 0 get_sp(18);
+      }
+
+      h4 {
+        font-size: 48px;
+        color: $clr-base-darkBlue;
+        margin-right: 8px;
+        font-weight: 900;
+
+        @include pc {
+          font-size: get_pc(48);
+          margin-right: get_pc(8);
+        }
+
+        @include sp {
+          font-size: get_sp(20);
+          margin-right: get_sp(1);
+        }
+
+        span {
+          font-size: 17px;
+          font-weight: bold;
+          line-height: 25px;
+          font-family: $base-maru-gothic;
+          text-align: center;
+          color: $clr-base-darkBlue;
+          display: block;
+
+          @include pc {
+            font-size: get_pc(17);
+            line-height: get_pc(25);
+          }
+
+          @include sp {
+            font-size: get_sp(8);
+            line-height: get_sp(11);
+          }
+        }
+      }
+
+      .dot {
+        span {
+          display: block;
+          position: relative;
+          font-size: 63px;
+          line-height: 12px;
+          letter-spacing: 20px;
+          top: -21px;
+          right: 25px;
+          color: $clr-base-darkBlue;
+
+          @include pc {
+            font-size: get_pc(63);
+            line-height: get_pc(12);
+            letter-spacing: get_pc(20);
+            top: get_pc(-21);
+            right: get_pc(25);
+          }
+
+          @include sp {
+            font-size: get_sp(25);
+            line-height: get_sp(5);
+            letter-spacing: get_sp(8);
+            top: get_sp(-8);
+            right: get_sp(4);
+          }
+        }
+      }
+
+      p {
+        font-size: 34px;
+        line-height: 34px;
+        color: $clr-base-darkBlue;
+        font-family: $base-font-family;
+        font-weight: bold;
+
+        @include pc {
+          font-size: get_pc(34);
+          line-height: get_pc(34);
+        }
+
+        @include sp {
+          font-size: get_sp(14);
+          line-height: get_sp(14);
+        }
+      }
+    }
+
+    .content {
+      background: transparent
+        linear-gradient(91deg, #6330d6 0%, #e216c9 44%, #ff009c 100%) 0% 0%
+        no-repeat padding-box;
+      border-radius: 5px;
+      padding: 5px 283px 22px 196px;
+      position: relative;
+      margin-bottom: 26px;
+
+      @include pc {
+        border-radius: get_pc(5);
+        padding: get_pc(5) get_pc(283) get_pc(22) get_pc(196);
+        margin-bottom: get_pc(26);
+      }
+
+      @include sp {
+        border-radius: get_sp(1);
+        padding: get_sp(2) get_sp(55) get_sp(9) get_sp(32);
+        margin-bottom: get_sp(9);
+      }
+
+      .txt_desp {
+        display: flex;
+      }
+
+      .frist {
+        display: flex;
+        align-items: flex-end;
+        margin-right: 46px;
+
+        @include pc {
+          margin-right: get_pc(46);
+        }
+
+        @include sp {
+          margin-right: get_sp(19);
+        }
+
+        span {
+          font-family: $base-font-family;
+          font-size: 21px;
+          line-height: 23px;
+          margin-right: 4px;
+          color: #ffffff;
+          width: 21px;
+          font-weight: bold;
+          top: -16px;
+          position: relative;
+
+          @include pc {
+            font-size: get_pc(21);
+            line-height: get_pc(23);
+            margin-right: get_pc(4);
+            width: get_pc(21);
+            top: get_pc(-16);
+          }
+
+          @include sp {
+            font-size: get_sp(9);
+            line-height: get_sp(10);
+            margin-right: get_sp(1);
+            width: get_sp(9);
+            top: get_sp(-6);
+          }
+        }
+
+        h2 {
+          font-family: $base-font-family;
+          font-size: 111px;
+          letter-spacing: 2.55px;
+          color: #fae700;
+          font-weight: bold;
+
+          @include pc {
+            font-size: get_pc(111);
+            letter-spacing: get_pc(2.55);
+          }
+
+          @include sp {
+            font-size: get_sp(45);
+            letter-spacing: get_sp(1.03);
+          }
+        }
+
+        .percent {
+          font-family: $base-font-family;
+          font-size: 63px;
+          letter-spacing: 1.45px;
+          color: #fae700;
+          line-height: 63px;
+          margin-right: 5px;
+          width: unset;
+          font-weight: bold;
+
+          @include pc {
+            font-size: get_pc(63);
+            letter-spacing: get_pc(1.45);
+            line-height: get_pc(63);
+            margin-right: get_pc(5);
+          }
+
+          @include sp {
+            font-size: get_sp(26);
+            letter-spacing: get_sp(0.6);
+            line-height: get_sp(26);
+            margin-right: get_sp(2);
+          }
+        }
+
+        .conversion {
+          font-family: $base-font-family;
+          font-size: 19px;
+          line-height: 21px;
+          margin-right: 0;
+          color: #ffffff;
+          width: unset;
+          font-weight: bold;
+
+          @include pc {
+            font-size: get_pc(19);
+            line-height: get_pc(21);
+          }
+
+          @include sp {
+            font-size: get_sp(8);
+            line-height: get_sp(9);
+          }
+
+          strong {
+            display: block;
+            margin-top: 2px;
+            font-family: $base-font-family;
+            font-size: 37px;
+            line-height: 37px;
+            margin-right: 0;
+            color: #ffffff;
+            width: unset;
+            font-weight: bold;
+            letter-spacing: 0.85px;
+
+            @include pc {
+              margin-top: get_pc(2);
+              font-size: get_pc(37);
+              line-height: get_pc(37);
+              letter-spacing: get_pc(0.85);
+            }
+
+            @include sp {
+              margin-top: 0;
+              font-size: get_sp(15);
+              line-height: get_sp(15);
+              letter-spacing: get_sp(0.34);
+            }
+          }
+        }
+      }
+
+      .last {
+        display: flex;
+        align-items: flex-end;
+
+        span {
+          font-family: $base-font-family;
+          font-size: 22px;
+          width: 22px;
+          color: #ffffff;
+          line-height: 22px;
+          margin-right: 1px;
+          font-weight: bold;
+          top: -16px;
+          position: relative;
+
+          @include pc {
+            width: get_pc(22);
+            font-size: get_pc(22);
+            line-height: get_pc(22);
+            margin-right: get_pc(1);
+            top: get_pc(-16);
+          }
+
+          @include sp {
+            width: get_sp(9);
+            font-size: get_sp(10);
+            line-height: get_sp(10);
+            margin-right: 0;
+            top: get_sp(-2);
+          }
+
+          strong {
+            font-size: 29px;
+
+            @include pc {
+              font-size: get_pc(29);
+            }
+
+            @include sp {
+              font-size: get_sp(12);
+              margin-bottom: get_sp(2);
+            }
+          }
+        }
+
+        h2 {
+          font-family: $base-font-family;
+          font-size: 111px;
+          letter-spacing: 2.55px;
+          color: #fae700;
+          font-weight: bold;
+          margin-right: 1px;
+
+          @include pc {
+            font-size: get_pc(111);
+            letter-spacing: get_pc(2.55);
+            margin-right: get_pc(1);
+          }
+
+          @include sp {
+            font-size: get_sp(45);
+            letter-spacing: get_sp(1.03);
+            margin-right: 0;
+          }
+        }
+
+        p {
+          font-family: $base-font-family;
+          font-size: 34px;
+          color: #ffffff;
+          letter-spacing: -1.94px;
+          font-weight: bold;
+          top: -16px;
+          position: relative;
+
+          @include pc {
+            font-size: get_pc(34);
+            letter-spacing: get_pc(-1.94);
+            top: get_pc(-16);
+          }
+
+          @include sp {
+            font-size: get_sp(14);
+            letter-spacing: get_sp(-0.8);
+            top: get_sp(-6);
+          }
+
+          span {
+            color: #fae700;
+            font-size: 34px;
+            letter-spacing: -1.94px;
+            font-weight: bold;
+            line-height: 34px;
+            margin-right: unset;
+            top: unset;
+
+            @include pc {
+              font-size: get_pc(34);
+              letter-spacing: get_pc(-1.94);
+              line-height: get_pc(34);
+            }
+
+            @include sp {
+              font-size: get_sp(14);
+              letter-spacing: get_sp(-0.8);
+              line-height: get_sp(14);
+            }
+          }
+        }
+      }
+
+      .txt_note {
+        font-family: $base-font-family;
+        font-weight: bold;
+        background: transparent
+          linear-gradient(275deg, #9e24d0 0%, #fe019c 100%) 0% 0% no-repeat
+          padding-box;
+        border: 3px solid #ffffff;
+        color: #ffffff;
+        font-size: 31px;
+        line-height: 34px;
+        letter-spacing: 0.74px;
+        padding: 8px 21px 14px 12px;
+
+        @include pc {
+          border: get_pc(3) solid #ffffff;
+          font-size: get_pc(31);
+          line-height: get_pc(34);
+          letter-spacing: get_pc(0.74);
+          padding: get_pc(8) get_pc(21) get_pc(14) get_pc(12);
+        }
+
+        @include sp {
+          border: get_sp(1) solid #ffffff;
+          font-size: get_sp(13);
+          line-height: get_sp(13);
+          letter-spacing: get_sp(0.3);
+          padding: get_sp(4) get_sp(7) get_sp(6) get_sp(4);
+        }
+
+        span {
+          font-size: 47px;
+          letter-spacing: 1.08px;
+
+          @include pc {
+            font-size: get_pc(47);
+            letter-spacing: get_pc(1.08);
+          }
+
+          @include sp {
+            font-size: get_sp(19);
+            letter-spacing: get_sp(0.44);
+          }
+        }
+
+        strong {
+          font-size: 30px;
+          letter-spacing: 0.69px;
+
+          @include pc {
+            font-size: get_pc(30);
+            letter-spacing: get_pc(0.69);
+          }
+
+          @include sp {
+            font-size: get_sp(12);
+            letter-spacing: get_sp(0.28);
+          }
+        }
+
+        .up {
+          font-size: 39px;
+          letter-spacing: 0.9px;
+
+          @include pc {
+            font-size: get_pc(39);
+            letter-spacing: get_pc(0.9);
+          }
+
+          @include sp {
+            font-size: get_sp(16);
+            letter-spacing: get_sp(0.37);
+          }
+        }
+      }
+
+      .thumb {
+        width: 270px;
+        position: absolute;
+        top: 44px;
+        right: 12px;
+
+        @include pc {
+          width: get_pc(270);
+          top: get_pc(44);
+          right: get_pc(12);
+        }
+
+        @include sp {
+          width: get_sp(71);
+          height: get_sp(99);
+          top: get_sp(34);
+          right: 0;
+        }
+      }
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center;
+
+      .phone {
+        background: #ffd5cb 0% 0% no-repeat padding-box;
+        border: 3px solid #ff4114;
+        border-radius: 37px;
+        margin-right: 47px;
+        height: 75px;
+        transition: 0.5s;
+
+        @include pc {
+          border: get_pc(3) solid #ff4114;
+          border-radius: get_pc(37);
+          margin-right: get_pc(47);
+          height: get_pc(75);
+        }
+
+        @include sp {
+          border: get_sp(1) solid #ff4114;
+          border-radius: get_sp(16);
+          margin-right: get_sp(10);
+          height: get_sp(31);
+        }
+
+        &:hover {
+          border: 3px solid #fff;
+          transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+
+          @include pc {
+            border: get_pc(3) solid #fff;
+          }
+
+          @include sp {
+            border: get_sp(1) solid #fff;
+          }
+        }
+
+        a {
+          font-family: $base-font-family;
+          font-weight: bold;
+          font-size: 26px;
+          color: #ff4114;
+          background: #ffffff 0% 0% no-repeat padding-box;
+          border: 3px solid #ff4114;
+          border-radius: 37px;
+          padding: 9px 12px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: -6px 0 0 0;
+          width: 304px;
+          height: 69px;
+          letter-spacing: -0.5px;
+
+          @include pc {
+            font-size: get_pc(26);
+            border: get_pc(3) solid #ff4114;
+            border-radius: get_pc(37);
+            padding: get_pc(9) get_pc(12);
+            width: get_pc(304);
+            margin: get_pc(-6) 0 0 0;
+            height: get_pc(69);
+            transition: 0.5s;
+          }
+
+          @include sp {
+            font-size: get_sp(10);
+            border: get_sp(1) solid #ff4114;
+            border-radius: get_sp(16);
+            padding: get_sp(5) get_sp(5.5);
+            width: get_sp(135);
+            margin: get_sp(-3) 0 0 0;
+            height: get_sp(28);
+          }
+
+          &:hover {
+            transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+            margin: 0;
+          }
+
+          &::before {
+            content: "";
+            @include bgsetup(
+              "../images/phone.png",
+              center,
+              100% auto,
+              no-repeat
+            );
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+            margin-right: 9px;
+
+            @include pc {
+              width: get_pc(48);
+              height: get_pc(48);
+              margin-right: get_pc(9);
+            }
+
+            @include sp {
+              width: get_sp(19);
+              height: get_sp(19);
+              margin-right: get_sp(3);
+            }
+          }
+
+          &::after {
+            content: "";
+            @include bgsetup(
+              "../images/arrow1.png",
+              center,
+              100% auto,
+              no-repeat
+            );
+            width: 9px;
+            height: 18px;
+            display: inline-block;
+            margin-left: 40px;
+
+            @include pc {
+              width: get_pc(9);
+              height: get_pc(18);
+              margin-left: get_pc(40);
+            }
+
+            @include sp {
+              width: get_sp(4);
+              height: get_sp(7);
+              margin-left: get_sp(13);
+            }
+          }
+        }
+      }
+
+      .mail {
+        background: #ffd5cb 0% 0% no-repeat padding-box;
+        border: 3px solid #ff4114;
+        border-radius: 37px;
+        height: 75px;
+        transition: 0.5s;
+
+        @include pc {
+          border: get_pc(3) solid #ff4114;
+          border-radius: get_pc(37);
+          height: get_pc(75);
+        }
+
+        @include sp {
+          border: get_sp(1) solid #ff4114;
+          border-radius: get_sp(16);
+          margin-right: get_sp(22);
+          height: get_sp(31);
+        }
+
+        &:hover {
+          border: 3px solid #fff;
+          transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+
+          @include pc {
+            border: get_pc(3) solid #fff;
+          }
+
+          @include sp {
+            border: get_sp(1) solid #fff;
+          }
+        }
+
+        a {
+          font-family: $base-font-family;
+          font-weight: bold;
+          font-size: 21px;
+          color: #ffffff;
+          background: #ff4114 0% 0% no-repeat padding-box;
+          border: 3px solid #ff4114;
+          border-radius: 37px;
+          padding: 9px 12px;
+          display: flex;
+          align-items: center;
+          margin: -6px 0 0 0;
+          height: 69px;
+          transition: 0.5s;
+
+          @include pc {
+            font-size: get_pc(21);
+            border: get_pc(3) solid #ff4114;
+            border-radius: get_pc(37);
+            margin: get_pc(-6) 0 0 0;
+            height: get_pc(69);
+          }
+
+          @include sp {
+            font-size: get_sp(9);
+            border: get_sp(1) solid #ff4114;
+            border-radius: get_sp(16);
+            padding: get_sp(5) get_sp(6);
+            margin: get_sp(-3) 0 0 0;
+            height: get_sp(28);
+          }
+
+          &:hover {
+            transition: 0.3s cubic-bezier(0.45, 0, 0.55, 1);
+            margin: 0;
+          }
+
+          &::before {
+            content: "";
+            @include bgsetup(
+              "../images/email.png",
+              center,
+              100% auto,
+              no-repeat
+            );
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+            margin-right: 11px;
+
+            @include pc {
+              width: get_pc(48);
+              height: get_pc(48);
+              margin-right: get_pc(11);
+            }
+
+            @include sp {
+              width: get_sp(19);
+              height: get_sp(19);
+              margin-right: get_sp(5);
+            }
+          }
+
+          &::after {
+            content: "";
+            @include bgsetup(
+              "../images/arrow2.png",
+              center,
+              100% auto,
+              no-repeat
+            );
+            width: 9px;
+            height: 18px;
+            display: inline-block;
+            margin-left: 30px;
+
+            @include pc {
+              width: get_pc(9);
+              height: get_pc(18);
+              margin-left: get_pc(30);
+            }
+
+            @include sp {
+              width: get_sp(4);
+              height: get_sp(8);
+              margin-left: get_sp(8);
+            }
+          }
+        }
+      }
+    }
+  }
+}
